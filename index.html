@@ -11,7 +11,7 @@ Date: 9/29/23
 
 <head>
     <meta charset="utf-8">
-    <title>Home | Daniel Huang</title>
+    <title>Main | Daniel Huang</title>
     <meta name="author" content="HTML Static Website">
     <meta name="description" content="HTML Static Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,46 +21,140 @@ Date: 9/29/23
     <meta name=“viewport” content=“width-device-width, initial-scale=1, maximum-scale=1”> 
     
 
-    <!--Google Font Code-->
+    <!--Google Font Code--> <!--One HTML comment-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bahiana&family=Coming+Soon&family=Neucha&family=Zeyada&display=swap" rel="stylesheet">
+
     
 </head>
 
 
 <body>
-    <main class="mainRoot"> 
-        <header class="mainTop"> 
-            <section class="mainHeader">
-                <a href="index.html"><img src="images/bthsLogoTransparent.png" id="bthsLogo"/></a> 
-                <h1 class="nameOfPage">MAIN</h1>
+    <div class="headerRoot">
+        <header class="headerTop"> 
+            <section class="header">
+                <a href="index.html"><img src="images/bthsLogoTransparent.png" id="bthsLogo"/></a> <!--Copyright Symbol (BTHS LOGO)-->
+                <h1 class="nameOfPage">MAIN</h1> <!--Heading #1-->
             </section>
         </header>
-    </main>
+    </div>
 
-    <nav class="mainNav">
-        <section>
+    <nav class="headerNav">
+        <section class="navSection">
             <ul class="navStructure">
                 <li class="navList">
-                    <a class="navLink" href="index.html"> Main </a>
-                </li>
-
-                <li class="">
-                    <a class="navLink" href="favorites.html"> Favorites </a>
+                    <a class="navLinkActive" href="index.html"> <span class="navText">Main</span></a>
                 </li>
 
                 <li class="navList">
-                    <a class="navLink" href="skills.html"> Skills </a>
+                    <a class="navLink" href="favorites.html"><span class="navText">Favorites</span></a>
                 </li>
 
                 <li class="navList">
-                    <a class="navLink" href="spots.html"> Spots </a>
+                    <a class="navLink" href="skills.html"> <span class="navText">Skills</span></a>
+                </li>
+
+                <li class="navList">
+                    <a class="navLink" href="spots.html"><span class="navText">Spots</span></a>
                 </li>
             </ul>
         </section>
-    </nav>
+    </nav> 
     
+    <main class="mainPage"> <!-- Semantic Container Element (main)--> 
+
+        <!--The Form -->
+        <aside class="formAside">
+            <h1>Feedback Form (Beta)</h1> 
+            <form action = "http://127.0.0.1:5500/index.html" method="POST" enctype="application/x-www-form-urlencoded"> <!--Form does not actually work-->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p><label for=nameField> Your Name: </label>
+                <input type="text" minLength="1" maxLength="100"  required name="userName"><br/> </p>
+                <p><label> Your Email: <input type="email" name="userEmail"><br/></label></p>
+                <p><label> Your Phone Number: <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="userTelephoneNumber"></label></p> 
+                <label><input type="radio" name="phoneType" value="cell">Cell </label>
+                <label><input type="radio" name="phoneType" value="work">Work</label>
+                <label><input type="radio" name="phoneType" value="home">Home </label>
+                <br/> 
+            <p>
+                You may contact me: 
+                <input type="checkbox" name="userCheckbox" value="phone"> by Phone
+                <input type="checkbox" name="userCheckbox" value="email"> by Email 
+                <br/>
+            </p>
+            
+            </fieldset>
+
+            <br/>
+
+            <fieldset> 
+                <legend>Feedback</legend>
+               <textarea required name="feedbackText" cols="40" rows="4"></textarea>
+            </fieldset>
+
+            <p><input type="submit" value="Submit"></p>
+        </aside>
+
+        <header class="mainHeader">
+            <h2>DANIEL</h2> <!-- Heading #2 -->
+            <img src="/images/profilePicture2.jpg" class="profile"/>
+            
+        </header>
+        
+       
+
+        <section class="sectionContainer">
+            <div class="textContainer"> <!-- Generic Container Element (div)-->
+                <!--Paragraph #1-->
+                <p>
+                    Hello! I am Daniel Huang. 
+                </p>
+
+                <p>
+                    I am currently a Senior at Brooklyn Technical High School in the Software Engineering major.
+                </p>
+
+                <p>
+                    I am also a Software Engineer Apprentice working within the Mastercard Research & Development Team <br/>coding super cool mixed 
+                    applications as well as discovery project demos on payment technology. 
+                </p>
+
+                <p>
+                    Besides all the tech stuff, I really enjoy gaming, eating good food, biking, <br/>playing basketball & handball, rock climbing, watching anime, and really anything!
+                </p>
+
+                <p>
+                    I am a really outgoing and vibey person, so please let me know if you ever want to talk about anything! :D 
+                </p>
+            </div>
+            
+        </section> 
+
+        <footer>
+            <p>
+                <address>
+                    © Brooklyn Technical High School - Web Development - Irimina PD 3 & 4 
+                </address>
+            </p>
+
+            <small>
+                2023 - Daniel Huang - All Rights Reserved ®
+            </small>
+
+            <p>
+                <small>
+                    <a href="https://www.linkedin.com/in/danielhuang519/">Created by Daniel Huang</a>
+                </small>
+            </p>
+        </footer>
+    </main>
+
+    
+   
+
+
 
 </body>
 
