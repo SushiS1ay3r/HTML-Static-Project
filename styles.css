@@ -1,0 +1,66 @@
+.mainTop
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.mainRoot
+{
+    background-image: url(images/spaceBG3.jpg);
+    background-size: cover;
+}
+
+.mainHeader
+{
+    display: flex;
+    margin-top: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+#bthsLogo
+{
+    height: 120px;
+    width: 120px;
+    margin-left: 10px;
+}
+
+.nameOfPage
+{
+    font-family: 'Coming Soon', cursive;
+    margin-left: 20px;
+    font-size: 50px;
+    color:rgb(134, 232, 232);
+}
+
+.mainNav 
+{
+    background-color: rgb(81, 243, 248);
+}
+
+.navStructure
+{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.navLink 
+{
+    display: block;
+    padding: 11px 0;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navList
+{
+    margin: 5px 5px 0 0;
+    float: left;
+    width: auto;
+}
