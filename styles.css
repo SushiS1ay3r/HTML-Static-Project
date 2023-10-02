@@ -134,7 +134,7 @@ nav a:hover
 
 .mainPageFour
 {
-    background-image: url(images/colorfulBG.jpg);
+    background-image: url(images/yellowerPastel.jpg);
     background-size: cover;
     min-height: 100vh;
 }
@@ -281,3 +281,58 @@ main > div > section > p
     margin-left: 600px;
 }
 
+#audioBox
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+iframe{
+    padding: 10px;
+}
+
+table
+{
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#tableBox
+{
+    display: flex;
+    
+}
+
+#tableHeader
+{
+    color: white;
+    background-color: black;
+}
+
+#spotsList
+{
+    float: right;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#tableText
+{
+    font-family: 'Coming Soon', cursive;
+    font-weight: bold;
+}
+
+#listHeaderTwo
+{
+    width: 500px;
+    font-size: 30px;
+
+}
+
+.newYork
+{
+    width: 500px;
+    height: 300px;
+}
